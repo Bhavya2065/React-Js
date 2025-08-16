@@ -1,34 +1,84 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Login, { Profile, Setting, name } from "./login"
+import { State } from "./state"
+import { Counter } from "./counter"
+import { Toggle } from "./toggle"
+import { CheckNum } from "./odd_even"
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <h1>Hello</h1>
+      <h1>{sum()}</h1>
+      <Animals />
+      <Login />
+      <Profile />
+      <Setting />
+      <h1>{name}</h1>
+      <Sum />
+      <Curly />
+      <State />
+      <Counter />
+      <Toggle />
+      <CheckNum />
     </>
+  )
+}
+
+// Component
+function Animals() {
+  return (
+    <>
+      <h1>CAT</h1>
+      <h1>DOG</h1>
+      <h1>ELE</h1>
+    </>
+  )
+}
+
+// Js function
+function sum() {
+  return 10 + 10
+}
+
+function call() {
+  alert("Function Called!!");
+}
+
+// Example of JSX -> HTML in javascript
+function Sum() {
+  const val = 20
+  let name = 'Vassi'
+  function operation(a, b, op) {
+    if (op == "+") {
+      return a + b
+    } else if (op == "-") {
+      return a - b
+    } else {
+      // console.log("Invalid"); // It prints in console in inspect
+      return "Invalid"
+    }
+  }
+  function call() {
+    alert("Function Called!!");
+  }
+  return (  
+    <div>
+      <h1>{val}</h1>
+      <h1>{name}</h1>
+      <h1>{operation(20, 20, '+')}</h1>
+      <h1>{operation(20, 20)}</h1>
+      <button onClick={() => alert("Hello")}>Click</button>
+      <button onClick={call}>Click to call</button>
+    </div>
+  )
+}
+
+function Curly() {
+  let arr = ["apple", "banana", "mango"]
+  return (
+    <div>
+      <h1>{arr}</h1>
+    </div>
   )
 }
 
