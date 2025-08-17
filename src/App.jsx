@@ -3,8 +3,27 @@ import { State } from "./state"
 import { Counter } from "./counter"
 import { Toggle } from "./toggle"
 import { CheckNum } from "./odd_even"
+import { Static_propes } from "./propes"
+import Dynamic_propes from "./propes"
+import { Object_propes } from "./propes"
+import { ArrayObj_propes } from "./propes"
+import { Name } from "./propes"
+import { useState } from "react"
+
+let objStudent = {
+  name: "Bhvya",
+  email: "sjsbkvb@gmail.com"
+}
+let objStudent1 = {
+  name: "Sanjiv",
+  email: "bjvbvb@gmail.com"
+}
+
+let [student, setState] = useState("Kavya")
 
 function App() {
+  let username = "Bhavya"
+  let age = 21
   return (
     <>
       <h1>Hello</h1>
@@ -20,6 +39,12 @@ function App() {
       <Counter />
       <Toggle />
       <CheckNum />
+      <Static_propes data={25} />
+      <Dynamic_propes name={username} age={age} />
+      <Object_propes user={objStudent} />
+      <Object_propes user={objStudent1} />
+      <ArrayObj_propes />
+      <Name name={student}/>
     </>
   )
 }
@@ -61,7 +86,7 @@ function Sum() {
   function call() {
     alert("Function Called!!");
   }
-  return (  
+  return (
     <div>
       <h1>{val}</h1>
       <h1>{name}</h1>

@@ -352,7 +352,7 @@ function StateVsVariable() {
 
 ### Hook Rules:
 1. Only call hooks at the top level (not inside loops, conditions, or nested functions)
-2. Only call hooks from React function components or custom hooks
+2. Hooks can only be called inside of the body of a function component.
 
 ---
 
