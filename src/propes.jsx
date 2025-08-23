@@ -48,7 +48,8 @@ export function ArrayObj_propes(){
 export function Name({name}) {
     return(
         <>
-            <h1>{name}</h1>
+            {name && <h1>Student Name: {name}</h1>} 
+            {/* This condition use: if the student name is provided in the state then only It prints this statement */}
         </>
     )
 }

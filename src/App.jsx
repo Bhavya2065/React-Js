@@ -9,6 +9,7 @@ import { Object_propes } from "./propes"
 import { ArrayObj_propes } from "./propes"
 import { Name } from "./propes"
 import { useState } from "react"
+import { Default_Prop, Wrapper } from "./defaultprop"
 
 let objStudent = {
   name: "Bhvya",
@@ -19,11 +20,11 @@ let objStudent1 = {
   email: "bjvbvb@gmail.com"
 }
 
-let [student, setState] = useState("Kavya")
 
 function App() {
   let username = "Bhavya"
   let age = 21
+  let [student, setStudent] = useState()
   return (
     <>
       <h1>Hello</h1>
@@ -45,6 +46,19 @@ function App() {
       <Object_propes user={objStudent1} />
       <ArrayObj_propes />
       <Name name={student}/>
+      <button onClick={() => setStudent("Kavya")}>Update Name of Student</button>
+      <Default_Prop name="Aniket"/>
+      <Default_Prop name=""/>
+      <Default_Prop />
+      <Wrapper color="blue"> 
+        <h1>What is your Name</h1> 
+      </Wrapper>
+      <Wrapper>
+        <h1>Hello Everyone</h1>
+      </Wrapper>
+      <Wrapper color="">
+        <h1>How Are you</h1>
+      </Wrapper>
     </>
   )
 }
