@@ -10,6 +10,7 @@ import { ArrayObj_propes } from "./propes"
 import { Name } from "./propes"
 import { useState } from "react"
 import { Default_Prop, Wrapper } from "./defaultprop"
+import GetInput from "./take_input"
 
 let objStudent = {
   name: "Bhvya",
@@ -27,7 +28,7 @@ function App() {
   let [student, setStudent] = useState()
   return (
     <>
-      <h1>Hello</h1>
+      {/* <h1>Hello</h1>
       <h1>{sum()}</h1>
       <Animals />
       <Login />
@@ -58,7 +59,8 @@ function App() {
       </Wrapper>
       <Wrapper color="">
         <h1>How Are you</h1>
-      </Wrapper>
+      </Wrapper> */}
+      <GetInput />
     </>
   )
 }
