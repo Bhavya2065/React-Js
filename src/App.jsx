@@ -12,6 +12,7 @@ import { useState } from "react"
 import { Default_Prop, Wrapper } from "./defaultprop"
 import GetInput from "./take_input"
 import CheckBox from "./checkBox"
+import RadioDropdown from "./radio_dropdown"
 
 let objStudent = {
   name: "Bhvya",
@@ -62,7 +63,8 @@ function App() {
         <h1>How Are you</h1>
       </Wrapper> */}
       {/* <GetInput /> */}
-      <CheckBox />
+      {/* <CheckBox /> */}
+      <RadioDropdown />
     </>
   )
 }
