@@ -11,6 +11,7 @@ import { Name } from "./propes"
 import { useState } from "react"
 import { Default_Prop, Wrapper } from "./defaultprop"
 import GetInput from "./take_input"
+import CheckBox from "./checkBox"
 
 let objStudent = {
   name: "Bhvya",
@@ -60,7 +61,8 @@ function App() {
       <Wrapper color="">
         <h1>How Are you</h1>
       </Wrapper> */}
-      <GetInput />
+      {/* <GetInput /> */}
+      <CheckBox />
     </>
   )
 }
