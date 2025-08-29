@@ -10,7 +10,7 @@ export default function GetInput() {
       <input
         type="text"
         placeholder="Enter your Name"
-        value={name}
+        value={name} // we take the value because when we click on the Reset then the text is also removed from their input field, So that we use this value attribute. 
         // 2. Pass the 'event' object to your arrow function.
         onChange={(event) => setName(event.target.value)}
       />
@@ -24,3 +24,5 @@ export default function GetInput() {
     </>
   );
 }
+
+// Note : This Is the example of the control component
