@@ -8,9 +8,6 @@ export function Static_propes({data}){
     )
 }
 
-
-// Method 2 : Dynamic Data sending
-
 export default function Dynamic_propes({name, age}){
     return (
         <>
@@ -22,8 +19,6 @@ export default function Dynamic_propes({name, age}){
     )
 }
 
-// Method 3: Object Data sending
-
 export function Object_propes({user}){
     console.log(user);
     return(
@@ -31,16 +26,6 @@ export function Object_propes({user}){
             <hr />
             <h1>{user.name}</h1>
             <h1>{user.email}</h1>
-        </>
-    )
-}
-
-// Method 4: Array Object method for sending data
-
-export function ArrayObj_propes(){
-    return (
-        <>
-            <h1></h1>
         </>
     )
 }
