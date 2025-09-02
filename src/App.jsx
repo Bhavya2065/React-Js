@@ -6,7 +6,6 @@ import { CheckNum } from "./odd_even"
 import { Static_propes } from "./propes"
 import Dynamic_propes from "./propes"
 import { Object_propes } from "./propes"
-import { ArrayObj_propes } from "./propes"
 import { Name } from "./propes"
 import { useState } from "react"
 import { Default_Prop, Wrapper } from "./defaultprop"
@@ -38,22 +37,22 @@ function App() {
       <Setting />
       <h1>{name}</h1>
       <Sum />
-      <Curly />
-      <State />
+      <Curly /> */}
+      {/* <State /> */}
       <Counter />
-      <Toggle />
-      <CheckNum />
-      <Static_propes data={25} />
-      <Dynamic_propes name={username} age={age} />
-      <Object_propes user={objStudent} />
-      <Object_propes user={objStudent1} />
-      <ArrayObj_propes />
-      <Name name={student}/>
-      <button onClick={() => setStudent("Kavya")}>Update Name of Student</button>
-      <Default_Prop name="Aniket"/>
+      {/* <Toggle /> */}
+      {/* <CheckNum /> */}
+      {/* <Static_propes data={25} /> */}
+      {/* <Dynamic_propes name={username} age={age} /> */}
+      {/* <Object_propes user={objStudent} /> */}
+      {/* <Object_propes user={objStudent1} /> */}
+      {/* <ArrayObj_propes /> */}
+      {/* <Name name={student}/> */}
+      {/* <button onClick={() => setStudent("Kavya")}>Update Name of Student</button> */} 
+      {/* <Default_Prop name="Aniket"/>
       <Default_Prop name=""/>
-      <Default_Prop />
-      <Wrapper color="blue"> 
+      <Default_Prop /> */}
+      {/* <Wrapper color="blue"> 
         <h1>What is your Name</h1> 
       </Wrapper>
       <Wrapper>
@@ -64,7 +63,7 @@ function App() {
       </Wrapper> */}
       {/* <GetInput /> */}
       {/* <CheckBox /> */}
-      <RadioDropdown />
+      {/* <RadioDropdown /> */}
     </>
   )
 }
