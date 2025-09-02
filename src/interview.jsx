@@ -124,3 +124,19 @@
 // const [state, setState] = useState(initialState)
 
 // here When the setState is called then the UI is re-render.
+
+// export function Counter() {
+//     const [count, setCount] = useState(50)
+//     const Increment_count = () => {
+//         setCount(previousCount => previousCount + 1)
+//         setCount(previousCount => previousCount + 1)
+//         setCount(previousCount => previousCount + 1)
+//         setCount(previousCount => previousCount + 1)
+//     }
+//     return(
+//         <>
+//             <h1>Count: {count}</h1>
+//             <button onClick={Increment_count}>Increment</button>
+//         </>
+//     )
+// }
