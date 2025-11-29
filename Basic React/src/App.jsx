@@ -13,6 +13,8 @@ import GetInput from "./take_input"
 import CheckBox from "./checkBox"
 import RadioDropdown from "./radio_dropdown"
 import Hello from "./Hello"
+import MapItem from "./mapItem"
+import ConditionalRendering from "./ConditionalRendering"
 
 let objStudent = {
   name: "Bhvya",
@@ -69,6 +71,8 @@ function App() {
       <Hello></Hello>
       <Hello></Hello>
       <Hello></Hello> */}
+      {/* <MapItem></MapItem> */}
+      <ConditionalRendering></ConditionalRendering>
     </>
   )
 }
