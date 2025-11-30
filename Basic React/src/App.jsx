@@ -25,7 +25,6 @@ let objStudent1 = {
   email: "bjvbvb@gmail.com"
 }
 
-
 function App() {
   let username = "Bhavya"
   let age = 21
