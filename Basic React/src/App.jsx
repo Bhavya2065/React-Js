@@ -15,6 +15,7 @@ import RadioDropdown from "./radio_dropdown"
 import Hello from "./Hello"
 import MapItem from "./mapItem"
 import ConditionalRendering from "./ConditionalRendering"
+import Practise from "./practise"
 
 let objStudent = {
   name: "Bhvya",
@@ -71,7 +72,8 @@ function App() {
       <Hello></Hello>
       <Hello></Hello> */}
       {/* <MapItem></MapItem> */}
-      <ConditionalRendering></ConditionalRendering>
+      {/* <ConditionalRendering></ConditionalRendering> */}
+      <Practise></Practise>
     </>
   )
 }
