@@ -1,6 +1,5 @@
 import Login, { Profile, Setting, name } from "./login"
 import { State } from "./state"
-import { Counter } from "./counter"
 import { Toggle } from "./toggle"
 import { CheckNum } from "./odd_even"
 import { Static_propes } from "./propes"
@@ -16,6 +15,8 @@ import Hello from "./Hello"
 import MapItem from "./mapItem"
 import ConditionalRendering from "./ConditionalRendering"
 import Practise from "./practise"
+import TextVariation from "./TextVariation"
+import RedBox, { BlueBox } from "./Color"
 
 let objStudent = {
   name: "Bhvya",
@@ -73,7 +74,10 @@ function App() {
       <Hello></Hello> */}
       {/* <MapItem></MapItem> */}
       {/* <ConditionalRendering></ConditionalRendering> */}
-      <Practise></Practise>
+      {/* <Practise></Practise> */}
+      {/* <TextVariation></TextVariation> */}
+      <RedBox />
+      <BlueBox />
     </>
   )
 }
