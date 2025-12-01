@@ -17,6 +17,7 @@ import ConditionalRendering from "./ConditionalRendering"
 import Practise from "./practise"
 import TextVariation from "./TextVariation"
 import RedBox, { BlueBox } from "./Color"
+import Card from "./Card"
 
 let objStudent = {
   name: "Bhvya",
@@ -76,8 +77,9 @@ function App() {
       {/* <ConditionalRendering></ConditionalRendering> */}
       {/* <Practise></Practise> */}
       {/* <TextVariation></TextVariation> */}
-      <RedBox />
-      <BlueBox />
+      {/* <RedBox />
+      <BlueBox /> */}
+      <Card />
     </>
   )
 }
