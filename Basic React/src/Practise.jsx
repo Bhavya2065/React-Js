@@ -1,3 +1,5 @@
+// First : Counter
+
 import React, { useState } from 'react'
 
 function Practise() {
@@ -5,7 +7,8 @@ function Practise() {
     return (
         <>
             <h1>{count}</h1>
-            <button onClick={() => setcount(count + 1)}>Increment</button>
+            <button onClick={() => setcount(count + 1)}>Increment</button> {/* First method */}
+            <button onClick={() => setcount(pre => pre + 1)}>Increment</button> {/* Second method */}
         </>
     )
 }
