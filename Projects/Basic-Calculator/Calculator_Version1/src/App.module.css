@@ -1,0 +1,11 @@
+.calculator{
+    width: 20%;
+    height: 80%;
+    border: 5px solid grey;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgb(70, 68, 68);
+}
+

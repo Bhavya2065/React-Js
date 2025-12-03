@@ -1,0 +1,7 @@
+.display{
+    border: 2px solid rgb(70, 69, 69);
+    border-radius: 10px;
+    height: 70px;
+    margin-bottom: 10px;
+    font-size: large;
+}

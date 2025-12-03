@@ -1,0 +1,15 @@
+.button-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.button{
+    font-size: x-large;
+    width: 53px;
+    height: 53px;
+    margin: 10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    cursor: pointer;
+}
