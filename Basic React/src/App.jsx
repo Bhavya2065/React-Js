@@ -1,23 +1,22 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Login, { Profile, Setting, name } from "./login"
 import { State } from "./state"
 import { Toggle } from "./toggle"
 import { CheckNum } from "./odd_even"
-import { Static_propes } from "./propes"
-import Dynamic_propes from "./propes"
-import { Object_propes } from "./propes"
-import { Name } from "./propes"
+import Dynamic_propes, { Static_propes, Object_propes, WithoutDestructuring, Default_Prop, Name } from "./propes"
 import { useState } from "react"
-import { Default_Prop, Wrapper } from "./defaultprop"
-import GetInput from "./take_input"
+import Wrapper from "./Wrapper"
+import GetInput from "./GetInput"
 import CheckBox from "./checkBox"
 import RadioDropdown from "./radio_dropdown"
-import Hello from "./Hello"
 import MapItem from "./mapItem"
 import ConditionalRendering from "./ConditionalRendering"
 import Practise from "./practise"
 import TextVariation from "./TextVariation"
 import RedBox, { BlueBox } from "./Color"
 import Card from "./Card"
+import FoodItems from "./FoodItems"
+import Container from './Container';
 
 let objStudent = {
   name: "Bhvya",
@@ -32,6 +31,7 @@ function App() {
   let username = "Bhavya"
   let age = 21
   let [student, setStudent] = useState()
+  const foodItem = ["vegetables", "fruits", "Salad", "Milk", "Ghee"]
   return (
     <>
       {/* <h1>Hello</h1>
@@ -43,20 +43,26 @@ function App() {
       <h1>{name}</h1>
       <Sum />
       <Curly /> */}
+
+
       {/* <State /> */}
       {/* <Counter /> */}
       {/* <Toggle /> */}
       {/* <CheckNum /> */}
+
+
       {/* <Static_propes data={25} /> */}
       {/* <Dynamic_propes name={username} age={age} /> */}
       {/* <Object_propes user={objStudent} /> */}
-      {/* <Object_propes user={objStudent1} /> */}
-      {/* <ArrayObj_propes /> */}
-      {/* <Name name={student}/> */}
-      {/* <button onClick={() => setStudent("Kavya")}>Update Name of Student</button> */}
+      {/* <Object_propes user={objStudent1} />   */}
+      {/* <WithoutDestructuring name="Samir" age="20"/> */}
       {/* <Default_Prop name="Aniket"/>
       <Default_Prop name=""/>
       <Default_Prop /> */}
+      {/* <Name name={student}/>
+      <button onClick={() => setStudent("Kavya")}>Update Name of Student</button> */}
+
+
       {/* <Wrapper color="blue"> 
         <h1>What is your Name</h1> 
       </Wrapper>
@@ -66,20 +72,30 @@ function App() {
       <Wrapper color="">
         <h1>How Are you</h1>
       </Wrapper> */}
+
+
       {/* <GetInput /> */}
       {/* <CheckBox /> */}
       {/* <RadioDropdown /> */}
-      {/* <Hello></Hello>
-      <Hello></Hello>
-      <Hello></Hello>
-      <Hello></Hello> */}
+
+
       {/* <MapItem></MapItem> */}
       {/* <ConditionalRendering></ConditionalRendering> */}
       {/* <Practise></Practise> */}
       {/* <TextVariation></TextVariation> */}
+
+
       {/* <RedBox />
       <BlueBox /> */}
-      <Card />
+      {/* <Card /> */}
+      {/* <FoodItems foodItems={foodItem}/> */}
+
+        
+      {/* <Container data="Secure Data">
+        <h1>Hello</h1>
+        <p>This is inside container</p>
+      </Container>
+      <Container children="above is the list of healthy foods and it is good for health." /> */}
     </>
   )
 }
