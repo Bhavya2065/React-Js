@@ -4,7 +4,7 @@ function ButtonContainer({ buttons }) {
     return (
         <>
             <div className={styles["button-container"]}>
-                {buttons.map(item => <button className={styles.button}>{item}</button>)}
+                {buttons.map((item) => <button key={item} className={styles.button}>{item}</button>)}
             </div>
         </>
     )
