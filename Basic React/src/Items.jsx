@@ -1,10 +1,22 @@
-function Items({items}) {
+function Items({ items }) {
+
+    function handleButtonClick(items) {
+        console.log(`${items} Button Clicked`);
+    }
+
     return (
         <>
-            {items.map((items) => <li key={items} className="list-group-item">{items}</li>)}
+            {items.map((items) => {
+                return (
+                    <li key={items} className="list-group-item">
+                        <span>{items}</span>
+                        <button style={{backgroundColor: "rgb(80, 200, 120)", float: "right"}} onClick={() => handleButtonClick(items)}>Buy</button>
+                    </li>
+                )
+            })}
         </>
     )
-}   
+}
 
 export default Items
 
