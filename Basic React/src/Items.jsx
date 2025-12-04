@@ -1,16 +1,17 @@
 function Items({ items }) {
 
-    function handleButtonClick(items) {
-        console.log(`${items} Button Clicked`);
+    const handleButtonClick = (item) => {
+        console.log(`${item} Button Clicked`);
     }
 
     return (
         <>
-            {items.map((items) => {
+            {items.map((item) => {
                 return (
-                    <li key={items} className="list-group-item">
-                        <span>{items}</span>
-                        <button style={{backgroundColor: "rgb(80, 200, 120)", float: "right"}} onClick={() => handleButtonClick(items)}>Buy</button>
+                    <li key={item} className="list-group-item">
+                        <span>{item}</span>
+                        <button style={{backgroundColor: "rgb(80, 200, 120)", float: "right"}} 
+                        onClick={() => handleButtonClick(item)}>Buy</button>
                     </li>
                 )
             })}
