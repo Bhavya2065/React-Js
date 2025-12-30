@@ -1,0 +1,5 @@
+.form-body{
+    margin: 20px;
+    min-width: 50ch; 
+    /* 50ch means width of atleast 50 character long */
+}
