@@ -1,0 +1,84 @@
+.main-body {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 300px auto;
+  grid-template-rows: auto max-content auto;
+}
+
+.header {
+  grid-column: 1/3;
+}
+
+.footer {
+  grid-column: 1/3;
+}
+
+.post-card {
+  margin: 30px;
+  width: 28%;
+  min-height: 16rem;
+  display: flex;
+  flex-direction: row;
+  grid-column: 2/3;
+  word-break: break-word;
+}
+
+.post-id {
+  height: 40px;
+  width: 40px;
+  padding-top: 12px;
+}
+
+.toggle-body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.post-reactions {
+  display: flex;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.reaction-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: none;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.reaction-btn.like {
+  background: #059b1bd2;
+  color: #fff;
+}
+
+.reaction-btn.like:hover {
+  background: #157347;
+}
+
+.reaction-btn.dislike {
+  background: #dc3545;
+  color: #fff;
+}
+
+.reaction-btn.dislike:hover {
+  background: #bb2d3b;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+.spinner-border {
+  width: 60px;
+  height: 60px;
+}
