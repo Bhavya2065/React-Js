@@ -5,7 +5,6 @@ import '../Styles/App.css'
 
 function Post({ post }) {
     const { deletePost } = useContext(PostContext)
-    console.log(post);
     
     return (
         <>
