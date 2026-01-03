@@ -66,6 +66,12 @@ export default App
 // Context is not a replacement for Redux for very large apps
 // Best for data like user, theme, language, settings
 
+{/* <ThemeContext.Provider value={{ theme, toggleTheme }}>
+      <Header />     ✅ can use context
+      <Footer />     ✅ can use context
+    </ThemeContext.Provider>
+      <Sidebar />      ❌ cannot use context */}
+
 // shortcut: You can pass object with the single name if the name of the key and value are same.
 
 {/* <TodoContext.Provider value={{
