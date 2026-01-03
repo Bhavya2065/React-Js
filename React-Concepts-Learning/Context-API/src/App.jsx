@@ -1,10 +1,10 @@
 import ToDoHeader from "./Components/ToDoHeader";
-import ToDoHeading from "./Components/ToDoHeading"
+import ToDoHeading from "./Components/ToDoHeading";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ToDoItems from "./Components/ToDoItems";
 import { useState } from "react";
 import WelcomeMessage from "./Components/WelcomeMessage";
-import { TodoContext } from "./store/ToDoItem-context";
+import { TodoContext } from "./store/ToItem-context";
 
 function App() {
 

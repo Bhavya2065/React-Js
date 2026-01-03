@@ -1,10 +1,10 @@
 import { useContext } from "react"
 import ToDoItem from "./ToDoItem"
-import { TodoContext } from "../store/ToDoItem-context"
+import { TodoContext } from "../store/ToItem-context"
 
 function ToDoItems() {
 
-    const {todoItems} = useContext(TodoContext); // Used object destructuring
+    const { todoItems } = useContext(TodoContext); // Used object destructuring
 
     return (
         <>
@@ -19,7 +19,7 @@ function ToDoItems() {
 
 export default ToDoItems
 
-// Shortcut: 
+// Shortcut:
 
 // Situation: In this situation we define one object named contextObj and use the value todoItems From that object.
 // One line shortcut: Object destructuring

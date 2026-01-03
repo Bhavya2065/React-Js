@@ -1,11 +1,11 @@
 import { useRef, useContext } from "react"
 import styles from "./ToDoHeader.module.css"
 import { RiCalendarTodoFill } from "react-icons/ri";
-import { TodoContext } from "../store/ToDoItem-context";
+import { TodoContext } from "../store/ToItem-context";
 
 function ToDoHeader() {
 
-    const {addNewItem} = useContext(TodoContext); // Used Object destructuring
+    const { addNewItem } = useContext(TodoContext); // Used Object destructuring
 
     const name = useRef(null)
     const dueDate = useRef(null)

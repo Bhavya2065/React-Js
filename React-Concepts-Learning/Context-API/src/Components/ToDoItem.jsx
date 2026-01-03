@@ -1,6 +1,6 @@
 import styles from "./ToDoItem.module.css"
 import { AiFillDelete } from "react-icons/ai";
-import { TodoContext } from "../store/ToDoItem-context";
+import { TodoContext } from "../store/ToItem-context";
 import { useContext } from "react";
 
 function ToDoItem({ ToDoName, ToDoDate }) {
