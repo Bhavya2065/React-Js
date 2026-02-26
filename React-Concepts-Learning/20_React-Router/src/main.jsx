@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { RouterProvider, createBrowserRouter} from 'react-router-dom'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import App from './App.jsx'
 import CreatePosts from './Components/CreatePosts.jsx'
 import PostList from './Components/PostList.jsx'
@@ -10,15 +10,15 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
     children: [
-      {path: "/", element: <PostList />},
-      {path: "/createPost", element: <CreatePosts />}
+      { path: "/", element: <PostList /> },
+      { path: "/createPost", element: <CreatePosts /> }
     ]
-  }
+  },
 ]);
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router}/>
+    <RouterProvider router={router} />
   </StrictMode>,
 )
 
