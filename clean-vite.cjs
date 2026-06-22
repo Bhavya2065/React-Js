@@ -121,6 +121,7 @@ body {
   min-height: 100svh;
   display: flex;
   flex-direction: column;
+  align-items: center;
   box-sizing: border-box;
   justify-content: center;
 }
